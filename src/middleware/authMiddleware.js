@@ -31,7 +31,7 @@ export const userAuth = async function (req, res, next) {
       }
     );
   } catch (err) {
-    console.log("This is the error :", err.message);
+    console.log(" error :", err.message);
     res.status(500).send({ msg: "Error", error: err.message });
   }
 };
